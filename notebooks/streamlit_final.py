@@ -41,8 +41,8 @@ airbnb_data = pd.read_csv('airbnb_rent.csv')
 
 
 # Hardcoded OpenCage API key
-API_KEY = "46f6ec6a67a04a279a29e10a9ae7b28a"  
-#api_key = "46f6ec6a67a04a279a29e10a9ae7b28a"  
+API_KEY = "Your API-Key"  
+
 
 # Function to get coordinates using OpenCage Geocoder
 def get_coordinates(address, API_KEY):
@@ -117,7 +117,7 @@ def calculate_distances(street, postal_code, city):
 
 # Input fields for address
 #st.subheader("Address of the House:")
-street = st.text_input('Street Name and House Number')
+street = st.text_input('Street Name')
 
 
 # Create two columns in Streamlit for input fields
